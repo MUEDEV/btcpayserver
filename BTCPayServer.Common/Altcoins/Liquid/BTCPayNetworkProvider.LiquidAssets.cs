@@ -10,21 +10,20 @@ namespace BTCPayServer
             var nbxplorerNetwork = NBXplorerNetworkProvider.GetFromCryptoCode("LBTC");
             Add(new ElementsBTCPayNetwork()
             {
-                CryptoCode = "USDt",
+                CryptoCode = "wMUE",
                 NetworkCryptoCode = "LBTC",
                 ShowSyncSummary = false,
                 DefaultRateRules = new[]
                 {
-                    "USDT_UST = 1",
-                    "USDT_X = USDT_BTC * BTC_X",
-                    "USDT_BTC = bitfinex(UST_BTC)",
+                                "MUE_X = MUE_BTC * BTC_X",
+                                "MUE_BTC = bittrex(MUE_BTC)"
                 },
                 AssetId = new uint256("ce091c998b83c78bb71a632313ba3760f1763d9cfcffae02258ffa9865a37bd2"),
                 DisplayName = "Liquid Tether",
                 BlockExplorerLink = NetworkType == NetworkType.Mainnet ? "https://blockstream.info/liquid/tx/{0}" : "https://blockstream.info/testnet/liquid/tx/{0}",
                 NBXplorerNetwork = nbxplorerNetwork,
                 UriScheme = "liquidnetwork",
-                CryptoImagePath = "imlegacy/liquid-tether.svg",
+                CryptoImagePath = "imlegacy/monetaryunit.png",
                 DefaultSettings = BTCPayDefaultSettings.GetDefaultSettings(NetworkType),
                 CoinType = NetworkType == NetworkType.Mainnet ? new KeyPath("1776'") : new KeyPath("1'"),
                 SupportRBF = true,
