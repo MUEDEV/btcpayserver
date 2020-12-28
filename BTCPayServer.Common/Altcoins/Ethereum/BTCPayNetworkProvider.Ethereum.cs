@@ -30,12 +30,12 @@ namespace BTCPayServer
             {
                 Add(new ERC20BTCPayNetwork()
                 {
-                    CryptoCode = "FAU",
-                    DisplayName = "Faucet Token",
+                    CryptoCode = "wMUE",
+                    DisplayName = "Wrapped MonetaryUnit",
                     DefaultRateRules = new[]
                     {
-                        "FAU_X = FAU_BTC * BTC_X",
-                        "FAU_BTC = 0.01",
+                                "MUE_X = MUE_BTC * BTC_X",
+                                "MUE_BTC = bittrex(MUE_BTC)"
                     },
                     BlockExplorerLink = "https://ropsten.etherscan.io/address/{0}#tokentxns",
                     ShowSyncSummary = false,
