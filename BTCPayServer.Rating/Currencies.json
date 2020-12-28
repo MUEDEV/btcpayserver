@@ -1176,8 +1176,8 @@
       "crypto":true
    },
    {
-      "name":"USDt",
-      "code":"USDT",
+      "name":"Wrapped MonetaryUnit",
+      "code":"wMUE",
       "divisibility":8,
       "symbol":null,
       "crypto":true
@@ -1302,8 +1302,8 @@
        "crypto": true
    },
    {
-       "name":"USDt",
-       "code":"USDT20",
+       "name":"Wrapped MonetaryUnit",
+       "code":"wMUE",
        "divisibility":6,
        "symbol":null,
        "crypto":true
